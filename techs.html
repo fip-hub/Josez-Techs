@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josez Techs - Software Solutions</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Arial, sans-serif; line-height:1.6; color:#333; background-color:#f4f4f4; }
+        header { background-color:#1a73e8; color:#fff; padding:20px 0; text-align:center; }
+        header h1 { margin-bottom:10px; }
+        nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:bold; }
+        nav a:hover { text-decoration:underline; }
+        section { padding:60px 20px; max-width:1000px; margin:auto; }
+        section h2 { margin-bottom:20px; color:#1a73e8; }
+        .about, .services, .projects, .skills, .contact { background-color:#fff; padding:40px 20px; margin-bottom:20px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.1); }
+        .services ul { list-style-type: square; padding-left: 20px; }
+        .projects .project-list { display:flex; flex-wrap:wrap; gap:20px; }
+        .project-item { flex:1 1 45%; background-color:#e8f0fe; padding:20px; border-radius:10px; }
+        .project-item h3 { color:#1a73e8; margin-bottom:10px; }
+        .skills ul { list-style-type: circle; padding-left: 20px; }
+        .contact form { display:flex; flex-direction:column; }
+        .contact input, .contact textarea { padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; font-size:16px; }
+        .contact button { padding:12px; background-color:#1a73e8; color:#fff; border:none; border-radius:5px; font-size:18px; cursor:pointer; }
+        .contact button:hover { background-color:#155ab6; }
+        footer { text-align:center; padding:20px; background-color:#222; color:#fff; }
+        footer a { color:#1a73e8; text-decoration:none; margin:0 10px; }
+        footer a:hover { text-decoration:underline; }
+        @media (max-width:600px) { nav a { display:block; margin:10px 0; } .projects .project-list { flex-direction:column; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Josez Techs</h1>
+        <p>Innovative Software Solutions by Josephat</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Josez Techs</h2>
+        <p>Hello! I'm Josephat, a passionate programmer working with software solutions. At Josez Techs, I create modern, efficient, and reliable applications tailored to your needs. From web apps to desktop software, my goal is to help businesses and individuals bring ideas to life.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Custom Software Development</li>
+            <li>Web Application Development</li>
+            <li>Desktop Software Solutions</li>
+            <li>Software Consulting & Optimization</li>
+            <li>Automation Tools for Businesses</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Inventory Management App</h3>
+                <p>A desktop app for tracking inventory and sales for small businesses.</p>
+            </div>
+            <div class="project-item">
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p>Programming Languages & Tools:</p>
+        <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Python / Django</li>
+            <li>Java / Spring Boot</li>
+            <li>Git / GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me directly via email or phone:</p>
+        <p>Email: <a href="mailto:your-email@example.com">www.josezjose414@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254708472594">0708472594</a></p>
+
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Josez Techs. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e){
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
